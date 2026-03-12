@@ -1,0 +1,89 @@
+body{
+font-family:Arial;
+background:#f5f7fb;
+margin:0;
+text-align:center;
+transition:0.3s;
+}
+
+header{
+background:linear-gradient(135deg,#4facfe,#00f2fe);
+padding:20px;
+color:white;
+}
+
+.controls{
+margin-top:10px;
+}
+
+input{
+padding:10px;
+border:none;
+border-radius:6px;
+width:200px;
+}
+
+button{
+padding:10px 15px;
+border:none;
+border-radius:6px;
+margin:5px;
+cursor:pointer;
+}
+
+.container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+width:220px;
+border-radius:12px;
+box-shadow:0 6px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.temp{
+font-size:32px;
+font-weight:bold;
+}
+
+.emoji{
+font-size:40px;
+}
+
+.loader{
+border:6px solid #eee;
+border-top:6px solid #3498db;
+border-radius:50%;
+width:40px;
+height:40px;
+margin:30px auto;
+animation:spin 1s linear infinite;
+}
+
+.hidden{
+display:none;
+}
+
+@keyframes spin{
+100%{transform:rotate(360deg);}
+}
+
+.dark{
+background:#121212;
+color:white;
+}
+
+.dark .card{
+background:#1f1f1f;
+}
